@@ -1,0 +1,170 @@
+/* mettre a defauut tous les autresstyles donnees par defaut */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.lll{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 60vh;
+    font-size: 100px;
+    font-weight: bold;
+    color: blue;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 4s;
+    animation: fadeIn 1s ease forwards;
+    animation-delay:6s;
+    animation-iteration-count: 3;
+    animation-delay: 4.2s;
+}
+@keyframes typing{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+@keyframes fadeOut{
+    from{ opacity: 1;}
+    to{ opacity: 0;}
+}
+ @keyframes fadeIn{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+} 
+
+.lll span{
+    display: inline-block;
+    opacity: 0;
+    animation: typing 0.3s forwards;
+    
+}
+.lll span:nth-child(1){animation-delay: 0.2s;}
+.lll span:nth-child(2){animation-delay: 0.6s;}
+.lll span:nth-child(3){animation-delay: 1s;}
+.lll span:nth-child(4){animation-delay: 1.4s;}
+.lll span:nth-child(5){animation-delay: 1.8s;}
+.lll span:nth-child(6){animation-delay: 2.2s;}
+.lll span:nth-child(7){animation-delay: 2.6s;}
+.lll span:nth-child(8){animation-delay: 2.7s;}
+.lll span:nth-child(9){animation-delay: 3s;}
+.lll span:nth-child(10){animation-delay: 3s;}
+.lll span:nth-child(11){animation-delay: 3s;}
+.lll span:nth-child(12){animation-delay: 3s;}
+.lll span:nth-child(13){animation-delay: 3s;}
+.lll span:nth-child(14){animation-delay: 3s;}
+.lll span:nth-child(15){animation-delay: 3s;}
+.lll span:nth-child(16){animation-delay: 3s;}
+.lll span:nth-child(17){animation-delay: 3s;}
+.lll span:nth-child(18){animation-delay: 3s;}
+.lll span:nth-child(19){animation-delay: 3s;}
+.ll{
+    
+    text-align: center;
+    
+
+}
+.aaa{
+   
+    margin-bottom: 20px;
+}
+.a{
+    width: 200px;
+   height: 50px;
+}
+.aa {
+    background-color:  chartreuse;
+    height: 30px;
+}
+.s{
+    text-align: center;
+    
+}
+.ss{
+    margin-bottom: 20px;
+    
+}
+.sss{
+    width: 200px;
+    height: 30px;
+}body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+}
+
+#calcul {
+    width: 75%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 140px;
+    font-weight: bold;
+}
+
+#options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.option {
+    height: 50px;
+    width: 30%;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.option.correct {
+    background-color: #8bc34a; /* Vert */
+   
+}
+
+.option.incorrect {
+    background-color: #f44336; /* Rouge */
+   
+}
+.hh{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.dd{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 193px; /* Ajustez la valeur en fonction de la position souhaitée */
+    padding: 10px 15px; /* Ajustez la valeur pour définir la taille du bouton */
+    background-color: coral; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    cursor: pointer; /* Curseur de souris au survol */
+}
